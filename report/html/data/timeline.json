@@ -1,0 +1,37 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-RML6UCN",
+    "children" : [ {
+      "name" : "38512-MainThread",
+      "children" : [ {
+        "name" : "test_login_success",
+        "uid" : "a731f864bbcc410e",
+        "parentUid" : "7a4ae14b25fd8a242049fddbef4eea6d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1586572690668,
+          "stop" : 1586572690668,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_fail",
+        "uid" : "82923e46aa517376",
+        "parentUid" : "7a4ae14b25fd8a242049fddbef4eea6d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1586572691551,
+          "stop" : 1586572691551,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7a4ae14b25fd8a242049fddbef4eea6d"
+    } ],
+    "uid" : "11b326bfee023f1e0a337fc1f073d82e"
+  } ]
+}

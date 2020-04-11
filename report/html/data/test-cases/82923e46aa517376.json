@@ -1,0 +1,81 @@
+{
+  "uid" : "82923e46aa517376",
+  "name" : "test_login_fail",
+  "fullName" : "testcases.sys.test_sys_login.Test_login#test_login_fail",
+  "historyId" : "d5aa2d4c30141e065bdea4986e12b366",
+  "time" : {
+    "start" : 1586572691551,
+    "stop" : 1586572691551,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "KeyError: 'object'",
+  "statusTrace" : "@pytest.fixture(scope='session',autouse=True)\n    def session_fixture():\n        path=\"/api/auth/login\"\n        data={'username':CommonData.mobile,\n              'password':CommonData.password}\n        resp=http.post(path,data)\n>       CommonData.token=resp['object']['token']\nE       KeyError: 'object'\n\nconftest.py:12: KeyError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "session_fixture",
+    "time" : {
+      "start" : 1586572690672,
+      "stop" : 1586572691386,
+      "duration" : 714
+    },
+    "status" : "broken",
+    "statusMessage" : "KeyError: 'object'\n",
+    "statusTrace" : "  File \"C:\\Users\\94047\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\pluggy\\callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"C:\\Users\\94047\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\_pytest\\fixtures.py\", line 964, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"C:\\Users\\94047\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\_pytest\\fixtures.py\", line 792, in call_fixture_func\n    res = fixturefunc(**kwargs)\n  File \"E:\\PyCharm Community Edition 2019.3.1\\jermeter\\conftest.py\", line 12, in session_fixture\n    CommonData.token=resp['object']['token']\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "登录失败"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.sys"
+  }, {
+    "name" : "suite",
+    "value" : "test_sys_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_login"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RML6UCN"
+  }, {
+    "name" : "thread",
+    "value" : "38512-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.sys.test_sys_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "82923e46aa517376.json",
+  "parameterValues" : [ ]
+}
